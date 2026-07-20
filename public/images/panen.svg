@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#fefbf4"/>
+  <rect x="90" y="120" width="620" height="260" rx="24" fill="#ffffff" stroke="#f0c36b" stroke-width="4"/>
+  <path d="M180 320 L240 220 L300 300 L360 180 L440 280 L520 200 L610 160" stroke="#e28b00" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="240" cy="220" r="22" fill="#e28b00"/>
+  <circle cx="300" cy="300" r="22" fill="#e28b00"/>
+  <circle cx="360" cy="180" r="22" fill="#e28b00"/>
+  <circle cx="440" cy="280" r="22" fill="#e28b00"/>
+  <circle cx="610" cy="160" r="22" fill="#e28b00"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#8b4f00">Panen</text>
+</svg>

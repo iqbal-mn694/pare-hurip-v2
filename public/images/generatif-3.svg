@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#fffdf4"/>
+  <rect x="80" y="110" width="640" height="280" rx="24" fill="#ffffff" stroke="#f2d278" stroke-width="4"/>
+  <path d="M180 320 C260 260, 320 250, 400 270 C480 290, 530 300, 620 190" stroke="#d8a31b" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <circle cx="180" cy="320" r="24" fill="#d8a31b"/>
+  <circle cx="400" cy="270" r="24" fill="#d8a31b"/>
+  <circle cx="620" cy="190" r="24" fill="#d8a31b"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#7b5600">Generatif 3</text>
+</svg>

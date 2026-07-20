@@ -1,0 +1,28 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0f14" />
+      <stop offset="60%" stop-color="#071218" />
+      <stop offset="100%" stop-color="#031216" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g2)" rx="0" />
+
+  <!-- yellow circle accent top-right -->
+  <g opacity="0.95">
+    <circle cx="1700" cy="80" r="56" fill="#d4a60f" />
+  </g>
+
+  <!-- dark green layered waves at bottom -->
+  <g transform="translate(0,640)">
+    <path d="M0 120 C220 80, 420 170, 640 120 C860 70, 1060 170, 1280 120 C1500 70, 1700 170, 1920 120 L1920 600 L0 600 Z" fill="#052822" />
+    <path d="M0 160 C220 120, 420 200, 640 160 C860 120, 1060 200, 1280 160 C1500 120, 1700 200, 1920 160 L1920 600 L0 600 Z" fill="#0b3b2f" opacity="0.9" />
+    <path d="M0 200 C220 160, 420 240, 640 200 C860 160, 1060 240, 1280 200 C1500 160, 1700 240, 1920 200 L1920 600 L0 600 Z" fill="#144e42" opacity="0.8" />
+  </g>
+
+  <!-- subtle wave strokes -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+    <path d="M40 760 C240 740, 440 780, 640 760 C840 740, 1040 780, 1240 760 C1440 740, 1640 780, 1840 760" />
+    <path d="M40 820 C240 800, 440 840, 640 820 C840 800, 1040 840, 1240 820 C1440 800, 1640 840, 1840 820" />
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f1f5f9" />
+  <g transform="translate(60,80)">
+    <rect x="0" y="0" width="1080" height="560" rx="28" fill="#0b1420" />
+    <circle cx="980" cy="60" r="36" fill="#eab308" />
+
+    <!-- layered waves -->
+    <g fill="#063a2b" opacity="0.9">
+      <path d="M0 420 C120 400 240 420 360 410 C480 400 600 420 720 420 C840 420 960 400 1080 410 L1080 560 L0 560 Z" />
+    </g>
+    <g fill="#0b3a2f" opacity="0.7">
+      <path d="M0 460 C140 440 260 460 380 450 C500 440 620 460 740 460 C860 460 980 440 1080 450 L1080 560 L0 560 Z" />
+    </g>
+    <g fill="#0e5847" opacity="0.6">
+      <path d="M0 500 C120 480 240 500 360 490 C480 480 600 500 720 500 C840 500 960 480 1080 490 L1080 560 L0 560 Z" />
+    </g>
+
+    <!-- subtle top horizon line -->
+    <rect x="0" y="200" width="1080" height="4" fill="#0f2933" opacity="0.45" />
+
+    <!-- decorative strokes -->
+    <path d="M40 340 Q200 320 360 340 T720 340" stroke="#102733" stroke-width="4" fill="none" opacity="0.12" />
+    <path d="M60 380 Q220 360 420 380 T760 380" stroke="#0e2a34" stroke-width="4" fill="none" opacity="0.08" />
+  </g>
+</svg>

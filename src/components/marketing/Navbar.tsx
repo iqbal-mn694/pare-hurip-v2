@@ -1,58 +1,48 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from 'next/navigation';
 import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
-  { label: "Beranda", href: "#hero" },
-  { label: "Fase Tanam", href: "#phase" },
-  { label: "Luas Panen & Harga Beras", href: "#harvest" },
+  { id: "beranda", label: "Beranda", href: "/" },
+  { id: "fase-tanam", label: "Fase Tanam", href: "/fase-tanam" },
+  { id: "siklus-pertumbuhan-padi", label: "Siklus Pertumbuhan Padi", href: "/luas-panen-harga-beras" },
+  { id: "dashboard", label: "Coba Sekarang", href: "/dashboard" },
 ];
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-30 border-b border-white/10 bg-black/20 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-slate-200/70 bg-white/90 backdrop-blur-xl shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8 lg:px-10">
-        <Link href="#hero" className="group flex items-center gap-3 text-white">
-          <div className="flex h-11 w-11 items-center justify-center rounded-3xl border border-white/20 bg-white/10 transition duration-300 group-hover:border-emerald-400">
-            <Image
-              src="/images/logo-leaf.svg"
-              alt="PARE HURIP logo"
-              width={28}
-              height={28}
-              priority
-            />
+        <Link href="/" className="group flex items-center gap-3 text-slate-900">
+          <div className="flex h-11 w-11 items-center justify-center rounded-3xl border border-emerald-200 bg-emerald-50 transition duration-300 group-hover:border-emerald-500">
+            <Image src="/images/logo-leaf.svg" alt="PARE HURIP logo" width={28} height={28} priority />
           </div>
           <div className="flex flex-col leading-tight">
-            <span className="text-sm font-semibold tracking-[0.18em] text-emerald-400">PARE</span>
-            <span className="text-sm font-semibold uppercase tracking-[0.18em] text-white/85">HURIP</span>
+            <span className="text-sm font-extrabold tracking-[0.18em] text-emerald-700">PARE</span>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-extrabold uppercase tracking-[0.18em] text-slate-900">HURIP</span>
+              <span className="rounded-full bg-emerald-100 px-2 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.18em] text-emerald-800">V2</span>
+            </div>
           </div>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm font-medium text-white/80 transition hover:text-white"
-            >
+            <Link key={item.id} href={item.href} className="text-sm font-semibold text-slate-700 transition hover:text-emerald-700">
               {item.label}
             </Link>
           ))}
-          <Link
-            href="#phase"
-            className="rounded-full border border-emerald-500 bg-emerald-500/10 px-5 py-2 text-sm font-semibold text-white transition hover:border-emerald-400 hover:bg-emerald-500/15"
-          >
-            Coba Sekarang
-          </Link>
         </nav>
 
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white transition hover:border-emerald-400 hover:bg-emerald-500/10 md:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 bg-slate-50 text-slate-900 transition md:hidden"
           aria-label="Toggle navigation"
           aria-expanded={open}
           onClick={() => setOpen((current) => !current)}
@@ -66,28 +56,14 @@ export function Navbar() {
         </button>
       </div>
 
-      <div
-        className={`md:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"} transition-all duration-300`}
-      >
-        <div className="rounded-b-3xl border-t border-white/10 bg-black/95 px-6 py-6 shadow-xl shadow-black/40">
+      <div className={`md:hidden ${open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"} transition-all duration-300`}>
+        <div className="rounded-b-3xl border-t border-slate-200 bg-white px-6 py-6 shadow-xl shadow-slate-200/60">
           <div className="flex flex-col gap-4">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className="text-base font-medium text-white/90 transition hover:text-white"
-              >
+              {navItems.map((item) => (
+              <Link key={item.id} href={item.href} onClick={() => setOpen(false)} className="text-base font-semibold text-slate-900 transition hover:text-emerald-700">
                 {item.label}
               </Link>
             ))}
-            <Link
-              href="#phase"
-              onClick={() => setOpen(false)}
-              className="inline-flex items-center justify-center rounded-full border border-emerald-500 bg-emerald-500/10 px-5 py-3 text-sm font-semibold text-white transition hover:border-emerald-400 hover:bg-emerald-500/15"
-            >
-              Coba Sekarang
-            </Link>
           </div>
         </div>
       </div>

@@ -1,0 +1,22 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220" />
+      <stop offset="70%" stop-color="#081923" />
+      <stop offset="100%" stop-color="#072628" />
+    </linearGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#g)" />
+  <g opacity="0.95">
+    <circle cx="1700" cy="110" r="56" fill="#dbae14" />
+  </g>
+  <g transform="translate(0,600)" opacity="0.95">
+    <path d="M0 80 C220 20, 420 140, 640 80 C860 20, 1060 140, 1280 80 C1500 20, 1700 140, 1920 80 L1920 1000 L0 1000 Z" fill="#0b2b23" />
+    <path d="M0 120 C220 60, 420 180, 640 120 C860 60, 1060 180, 1280 120 C1500 60, 1700 180, 1920 120 L1920 1000 L0 1000 Z" fill="#173b33" opacity="0.9" />
+    <path d="M0 160 C220 100, 420 220, 640 160 C860 100, 1060 220, 1280 160 C1500 100, 1700 220, 1920 160 L1920 1000 L0 1000 Z" fill="#1b5d54" opacity="0.8" />
+  </g>
+  <g opacity="0.06" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+    <path d="M40 720 C220 700, 420 740, 620 720 C820 700, 1020 740, 1220 720 C1420 700, 1620 740, 1820 720" />
+    <path d="M40 780 C240 760, 440 800, 640 780 C840 760, 1040 800, 1240 780 C1440 760, 1640 800, 1840 780" />
+  </g>
+</svg>

@@ -3,40 +3,28 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative isolate min-h-screen overflow-hidden">
-      <div className="absolute inset-0">
-        <Image
-          src="/images/hero-sawah.svg"
-          alt="Sawah Indonesia"
-          fill
-          sizes="100vw"
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/55" />
-      </div>
-
-      <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl items-center px-6 py-8 sm:px-8 lg:px-10">
-        <div className="max-w-3xl animate-fade-in space-y-8 text-white">
-          <p className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs uppercase tracking-[0.26em] text-white/70">
-            Data pertanian Tasikmalaya
-          </p>
-
+    <section id="hero" className="relative isolate min-h-[calc(100vh-5rem)] overflow-hidden pt-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-6 py-12 sm:px-8 lg:px-10">
+        <div className="max-w-3xl space-y-10 text-white">
           <div className="space-y-6">
-            <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl lg:text-6xl">
+            <p className="text-sm uppercase tracking-[0.26em] text-emerald-300">PARE HURIP V2</p>
+            <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
               Menyediakan data hasil KSA untuk perhitungan prediksi hasil panen padi secara akurat.
             </h1>
-            <p className="max-w-xl italic text-white/80 sm:text-lg">
-              &ldquo;Menyediakan data pertanian yang lebih baik untuk kesejahteraan petani.&rdquo;
+            <p className="max-w-2xl text-lg text-slate-200 sm:text-xl italic">
+              “Menyediakan data pertanian yang lebih baik untuk kesejahteraan petani.”
+            </p>
+            <p className="max-w-2xl text-sm text-slate-300 sm:text-base">
+              Klik tombol Coba Sekarang untuk melihat prediksi per kecamatan dan tren fase tanam secara langsung.
             </p>
           </div>
 
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
-            <Link
-              href="#phase"
-              className="inline-flex items-center justify-center rounded-full border border-white/70 bg-white/10 px-7 py-3 text-sm font-semibold text-white transition duration-300 hover:border-white hover:bg-white/20"
-            >
-              Analisis Terbaru Kami
+            <Link href="/fase-tanam" className="inline-flex items-center justify-center rounded-full bg-emerald-500 px-7 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-400">
+              Coba Sekarang
+            </Link>
+            <Link href="/login" className="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-7 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50">
+              Masuk Admin
             </Link>
           </div>
         </div>

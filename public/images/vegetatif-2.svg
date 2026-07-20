@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#f9fcf4"/>
+  <rect x="80" y="120" width="640" height="260" rx="24" fill="#ffffff" stroke="#b5d98b" stroke-width="4"/>
+  <path d="M180 330 L260 220 L340 300 L420 180 L500 280 L620 160" stroke="#7cb342" stroke-width="18" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="260" cy="220" r="22" fill="#7cb342"/>
+  <circle cx="340" cy="300" r="22" fill="#7cb342"/>
+  <circle cx="420" cy="180" r="22" fill="#7cb342"/>
+  <circle cx="500" cy="280" r="22" fill="#7cb342"/>
+  <circle cx="620" cy="160" r="22" fill="#7cb342"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#4e6b26">Vegetatif 2</text>
+</svg>

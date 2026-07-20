@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" rx="32" fill="#f4fbf7"/>
+  <rect x="90" y="120" width="620" height="260" rx="24" fill="#ffffff" stroke="#8fd09b" stroke-width="4"/>
+  <path d="M220 330 C300 250, 360 220, 400 250 C440 280, 500 300, 580 180" stroke="#2e8b57" stroke-width="18" fill="none" stroke-linecap="round"/>
+  <circle cx="220" cy="330" r="24" fill="#2e8b57"/>
+  <circle cx="400" cy="250" r="24" fill="#2e8b57"/>
+  <circle cx="580" cy="180" r="24" fill="#2e8b57"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Arial" font-size="34" font-weight="700" fill="#1f4d31">Bera</text>
+</svg>
