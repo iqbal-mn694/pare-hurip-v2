@@ -145,7 +145,7 @@ export default function DashboardPage() {
         <div className="mb-12 flex flex-col gap-4 rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:flex-row md:items-center md:justify-between">
           <div className="space-y-3">
             <p className="text-sm uppercase tracking-[0.3em] text-slate-500">Dashboard PARE HURIP</p>
-            <h1 className="text-4xl font-extrabold">Selamat datang</h1>
+            <h1 className="text-4xl font-extrabold">Selamat Datang</h1>
             <p className="text-slate-600">Lihat prediksi per kecamatan dan data perjalanan panen Anda.</p>
           </div>
           <div className="flex flex-wrap gap-3">
